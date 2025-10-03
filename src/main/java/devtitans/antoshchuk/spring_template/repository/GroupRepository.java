@@ -8,8 +8,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 @EnableJpaRepositories
-public interface StudentRepository extends JpaRepository<Student, Long> {
+public interface GroupRepository extends JpaRepository<Group, Long> {
     // save find remove
-
-    Student getStudentByGroup(Group group);
 }
